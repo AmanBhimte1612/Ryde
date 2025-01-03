@@ -48,3 +48,33 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
+make file name ".eslintrc.js" and put these line under that file
+
+module.exports = {
+  extends: ['expo', 'prettier'],
+  plugins: ['prettier'],
+  rules: {
+    'prettier/prettier': 'error',
+  },
+};
+
+
+
+
+make .env file and configure all api keys
+
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=
+DATABASE_URL=
+
+EXPO_PUBLIC_SERVER_URL=https://uber.com/
+
+EXPO_PUBLIC_GEOAPIFY_API_KEY=
+EXPO_PUBLIC_GOOGLE_API_KEY=
+
+
+EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+
+STRIPE_SECRET_KEY=
